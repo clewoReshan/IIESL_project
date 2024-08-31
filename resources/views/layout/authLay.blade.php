@@ -48,31 +48,44 @@
     <div class="container">
         <!-- {{-- successfull message --}} -->
         @if (Session::has('success'))
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <span>Success : {{ Session::get('success') }}</span>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <img src="..." class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small>11 mins ago</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    Hello, world! This is a toast message.
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div class="toast align-items-center text-bg-success border-0 bottom-0 end-0 show" role="alert"
+                    aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+                    <div class="toast-header">
+                        <img src="{{ asset('assets/images/logo.png') }}" width="20px" class="rounded me-2"
+                            alt="IIESL Logo">
+                        <strong class="me-auto">IIESL</strong>
+                        <small>Just Now</small>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Error: {{ Session::get('success') }}
+                    </div>
                 </div>
             </div>
         @endif
 
         <!-- {{-- error message --}} -->
         @if (Session::has('error'))
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Error :</strong> {{ Session::get('error') }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div class="toast align-items-center text-bg-danger border-0 bottom-0 end-0 show" role="alert"
+                    aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+                    <div class="toast-header">
+                        <img src="{{ asset('assets/images/logo.png') }}" width="20px" class="rounded me-2"
+                            alt="IIESL Logo">
+                        <strong class="me-auto">IIESL</strong>
+                        <small>Just Now</small>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Error: {{ Session::get('error') }}
+                    </div>
+                </div>
             </div>
         @endif
+
         @yield('content')
     </div>
 </body>
