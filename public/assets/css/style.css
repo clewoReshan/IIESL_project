@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -66,14 +67,15 @@ p {
   border: none;
   margin: 0 0 0 10px;
 }
-.openbtn:hover {
-  background-color: #444;
-}
 
 #main {
   transition: margin-left 0.5s;
   padding: 0;
   margin-left: 250px;
+  margin-top: 12px;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-radius: 15px 0 0 0;
 }
 
 #content {
@@ -93,10 +95,28 @@ p {
 }
 .main_container {
   padding: 0 !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .dashboard_container {
   padding: 10px;
   height: 100%;
   overflow-y: hidden;
+  border-left: 2px solid #ddd;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top_bar .top_bar_content {
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+.top_bar .greeting_msg {
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+}
+.top_bar .currentdate {
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
 *{
     margin: 0 ;
     padding: 0;
+    overflow-x: hidden;
 }
 
 $pimary-bg: #FFFFFF; 
@@ -109,7 +110,6 @@ p{
   }
 
 
-    
   .openbtn {
     font-size: 30px;
     cursor: pointer;
@@ -120,9 +120,9 @@ p{
     margin: 0 0 0 10px;
     // margin-left: 250px;
 
-    &:hover {
-      background-color: #444;
-    }
+    // &:hover {
+    //   background-color: #444;
+    // }
 
   }
   
@@ -130,6 +130,10 @@ p{
     transition: margin-left .5s;
     padding:  0;
     margin-left: 250px;
+    margin-top: 12px;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    border-radius: 15px 0 0 0;
   }
 
   #content{
@@ -149,11 +153,40 @@ p{
 
 .main_container{
     padding: 0 !important;
+    box-shadow: $box-shadow-sm;
 }
 
 .dashboard_container{
   padding: 10px;
   height:  100%;
   overflow-y: hidden;
+  border-left: 2px solid #ddd;
+  height: 100vh;
+  overflow: hidden;
 
+}
+
+// ---Top bar
+
+.top_bar{
+
+  .top_bar_content{
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  
+
+
+
+  .greeting_msg{
+    color: $black;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .currentdate{
+    font-size: 16px;
+    font-weight: 400;
+  }
 }

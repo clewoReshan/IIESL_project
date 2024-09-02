@@ -13,6 +13,10 @@
 <div class="content" id="content">
     <div class="dashboard_container" id="dashboard_container">
 
+      {{-- add dashboard content here! --}}
+
+
+
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor modi
             magni, et rerum molestias numquam alias esse quod tenetur dolore
@@ -23,6 +27,10 @@
             Atque dolorum minima, dolore dolorem voluptatem nobis officiis?
             Expedita.
         </p>
+
+
+
+
     </div>
 </div>
 
@@ -51,11 +59,6 @@
         }
     }
 </script>
-
-
-
-{{--  --}}
-
 
 
 
