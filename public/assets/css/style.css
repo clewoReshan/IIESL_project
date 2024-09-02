@@ -62,7 +62,7 @@ p {
 .openbtn {
   font-size: 30px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #1A1A1A;
   border: none;
   margin: 0 0 0 10px;
@@ -119,4 +119,10 @@ p {
 .top_bar .currentdate {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+  .top_bar_content {
+    padding-left: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

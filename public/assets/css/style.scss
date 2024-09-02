@@ -5,16 +5,22 @@
     overflow-x: hidden;
 }
 
+// ---variables
+
+// --colors
+
 $pimary-bg: #FFFFFF; 
 $secondery-bg: #F6F7F9;
 $black: #000;
 $secondery-black: #1A1A1A;
 $gray:#4A4A54;
-
+$light-gray: #ddd;
 
 // --shadow
 
 $box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+
+
 
 html{
   background-color: $secondery-bg;
@@ -113,7 +119,7 @@ p{
   .openbtn {
     font-size: 30px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: $pimary-bg;
     color: $secondery-black;
     // padding: 10px 15px;
     border: none;
@@ -131,8 +137,8 @@ p{
     padding:  0;
     margin-left: 250px;
     margin-top: 12px;
-    border-top: 2px solid #ddd;
-    border-left: 2px solid #ddd;
+    border-top: 2px solid $light-gray;
+    border-left: 2px solid $light-gray;
     border-radius: 15px 0 0 0;
   }
 
@@ -160,7 +166,7 @@ p{
   padding: 10px;
   height:  100%;
   overflow-y: hidden;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid $light-gray;
   height: 100vh;
   overflow: hidden;
 
@@ -175,10 +181,6 @@ p{
     padding-bottom: 10px;
   }
 
-  
-
-
-
   .greeting_msg{
     color: $black;
     font-size: 22px;
@@ -189,4 +191,12 @@ p{
     font-size: 16px;
     font-weight: 400;
   }
+}
+
+@media screen and (max-width:991px) {
+
+.top_bar_content{
+  padding-left: 10px;
+}
+  
 }
