@@ -3,9 +3,17 @@
   padding: 0;
 }
 
+html {
+  background-color: #F6F7F9;
+}
+
+p {
+  margin: 0 !important;
+}
+
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -13,40 +21,51 @@
   background-color: #F6F7F9;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 25px;
 }
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+.sidebar .admin_name {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 32px;
+}
+.sidebar .admin_email {
+  font-size: 14px;
+  padding-left: 32px;
+}
+.sidebar hr {
+  margin: 32px 20px 0 20px;
+}
+.sidebar .sideBar_link {
+  margin: 25px 10px 0 10px;
+}
+.sidebar .sideBar_link a {
   display: block;
-  transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #4A4A54;
+  font-weight: 500;
 }
-
-.sidebar a:hover {
-  color: #f1f1f1;
+.sidebar .sideBar_link a:hover {
+  color: #000;
+  transition: 0.5s;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
 }
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.sidebar .sideBar_link a i {
+  padding-right: 10px;
 }
 
 .openbtn {
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
+  background-color: #fff;
+  color: #1A1A1A;
   border: none;
-  margin: 0 0 10px 10px;
+  margin: 0 0 0 10px;
 }
-
 .openbtn:hover {
   background-color: #444;
 }
@@ -54,6 +73,13 @@
 #main {
   transition: margin-left 0.5s;
   padding: 0;
+  margin-left: 250px;
+}
+
+#content {
+  transition: margin-left 0.5s;
+  padding: 0;
+  margin-left: 250px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -68,6 +94,9 @@
 .main_container {
   padding: 0 !important;
 }
-.main_container h1 {
-  margin-left: 10px;
+
+.dashboard_container {
+  padding: 10px;
+  height: 100%;
+  overflow-y: hidden;
 }/*# sourceMappingURL=style.css.map */

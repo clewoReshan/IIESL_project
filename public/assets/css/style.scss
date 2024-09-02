@@ -4,72 +4,156 @@
     padding: 0;
 }
 
+$pimary-bg: #FFFFFF; 
+$secondery-bg: #F6F7F9;
+$black: #000;
+$secondery-black: #1A1A1A;
+$gray:#4A4A54;
+
+
+// --shadow
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+
+html{
+  background-color: $secondery-bg;
+}
+
+
+
+
+p{
+  margin: 0 !important;
+}
+
 .sidebar {
     height: 100%;
-    width: 0;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #F6F7F9;
+    background-color: $secondery-bg;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 25px;
+
+    // a {
+    //   padding: 8px 8px 8px 32px;
+    //   text-decoration: none;
+    //   font-size: 25px;
+    //   color: #818181;
+    //   display: block;
+    //   transition: 0.3s;
+    // }
+
+    // &:hover{
+
+    //   color: #f1f1f1;
+
+    // }
+
+    // .closebtn {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 25px;
+    //   font-size: 36px;
+    //   margin-left: 50px;
+    // }
+
+
+    .admin_name{
+      color: $black;
+      font-size: 18px;
+      font-weight: 600;
+      padding-left:32px ;
+    }
+
+    .admin_email{
+      font-size: 14px;
+      padding-left: 32px;
+    }
+
+    hr{
+      margin: 32px 20px 0 20px;
+    }
+
+    .sideBar_link{
+
+      margin: 25px 10px 0 10px;
+
+      a{
+        display: block;
+        padding: 8px 8px 8px 32px;
+        font-size: 18px;
+        text-decoration: none;
+        color: $gray;
+        font-weight: 500;
+
+        &:hover{
+          color: $black;
+          transition: 0.5s;
+          background-color: $pimary-bg;
+          box-shadow: $box-shadow-sm;
+          border-radius: 5px;
+        }
+
+        i{
+          padding-right: 10px;
+        }
+
+      }
+      
+    }
+
   }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
+
+
+    
   .openbtn {
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
+    background-color: #fff;
+    color: $secondery-black;
+    // padding: 10px 15px;
     border: none;
-    margin: 0 0 10px 10px;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
+    margin: 0 0 0 10px;
+    // margin-left: 250px;
+
+    &:hover {
+      background-color: #444;
+    }
+
   }
   
   #main {
     transition: margin-left .5s;
     padding:  0;
+    margin-left: 250px;
   }
+
+  #content{
+    transition: margin-left .5s;
+    padding:  0;
+    margin-left: 250px;
   
+  }
+
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
 
-
 //   -- main content--
 
 .main_container{
     padding: 0 !important;
+}
 
-    h1{
-        margin-left: 10px;
-    }
+.dashboard_container{
+  padding: 10px;
+  height:  100%;
+  overflow-y: hidden;
+
 }
