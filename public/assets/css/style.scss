@@ -1,6 +1,7 @@
+@import "./user";
 
-*{
-    margin: 0 ;
+* {
+    margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
@@ -9,28 +10,33 @@
 
 // --colors
 
-$pimary-bg: #FFFFFF; 
-$secondery-bg: #F6F7F9;
+// $pimary-bg: #FFFFFF;
+// $secondery-bg: #edeef3;
+// $black: #000;
+// $secondery-black: #1A1A1A;
+// $gray:#4A4A54;
+// $light-gray: #ddd;
+
+$pimary-bg: #edeef3;
+$secondery-bg: #ffff;
 $black: #000;
-$secondery-black: #1A1A1A;
-$gray:#4A4A54;
+$secondery-black: #1a1a1a;
+$gray: #4a4a54;
 $light-gray: #ddd;
+$white: #ffff;
+
+$purple: #4b49ac;
 
 // --shadow
 
-$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
 
-
-
-html{
-  background-color: $secondery-bg;
+body {
+    background-color: $secondery-bg;
 }
 
-
-
-
-p{
-  margin: 0 !important;
+p {
+    margin: 0 !important;
 }
 
 .sidebar {
@@ -43,81 +49,60 @@ p{
     background-color: $secondery-bg;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 25px;
+    padding-top: 32px;
 
-    // a {
-    //   padding: 8px 8px 8px 32px;
-    //   text-decoration: none;
-    //   font-size: 25px;
-    //   color: #818181;
-    //   display: block;
-    //   transition: 0.3s;
-    // }
-
-    // &:hover{
-
-    //   color: #f1f1f1;
-
-    // }
-
-    // .closebtn {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 25px;
-    //   font-size: 36px;
-    //   margin-left: 50px;
-    // }
-
-
-    .admin_name{
-      color: $black;
-      font-size: 18px;
-      font-weight: 600;
-      padding-left:32px ;
-    }
-
-    .admin_email{
-      font-size: 14px;
-      padding-left: 32px;
-    }
-
-    hr{
-      margin: 32px 20px 0 20px;
-    }
-
-    .sideBar_link{
-
-      margin: 25px 10px 0 10px;
-      padding-bottom: 10px;
-
-      a{
-        display: block;
-        padding: 8px 8px 8px 32px;
+    .admin_name {
+        color: $black;
         font-size: 18px;
-        text-decoration: none;
-        color: $gray;
-        font-weight: 500;
-
-        &:hover{
-          color: $black;
-          transition: 0.5s;
-          background-color: $pimary-bg;
-          box-shadow: $box-shadow-sm;
-          border-radius: 5px;
-        }
-
-        i{
-          padding-right: 10px;
-        }
-
-      }
-      
+        font-weight: 600;
+        padding-left: 32px;
     }
 
-  }
+    .admin_email {
+        font-size: 14px;
+        padding-left: 32px;
+    }
 
+    hr {
+        margin: 25px 15px 0 15px !important;
+    }
 
-  .openbtn {
+    .sideBar_link {
+        margin: 25px 10px 0 10px;
+        padding-bottom: 10px;
+        padding: 0 0 10px 0;
+
+        a {
+            display: block;
+            padding: 8px 8px 8px 32px;
+            font-size: 18px;
+            text-decoration: none;
+            color: $gray;
+            font-weight: 500;
+
+            &:hover {
+                color: $white;
+                transition: 0.5s;
+                background-color: $purple;
+                box-shadow: $box-shadow-sm;
+                border-radius: 5px;
+            }
+
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.active-link {
+    color: $black;
+    background-color: $pimary-bg;
+    box-shadow: $box-shadow-sm;
+    border-radius: 5px;
+}
+
+.openbtn {
     font-size: 30px;
     cursor: pointer;
     background-color: $pimary-bg;
@@ -130,74 +115,97 @@ p{
     // &:hover {
     //   background-color: #444;
     // }
+}
 
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding:  0;
+#main {
+    transition: margin-left 0.5s;
+    padding: 0;
     margin-left: 250px;
-    margin-top: 12px;
-    border-top: 2px solid $light-gray;
-    border-left: 2px solid $light-gray;
+    margin-top: 10px;
+    // border-top: 2px solid $light-gray;
+    // border-left: 2px solid $light-gray;
     border-radius: 15px 0 0 0;
-  }
+}
 
-  #content{
-    transition: margin-left .5s;
-    padding:  0;
+#content {
+    transition: margin-left 0.5s;
+    padding: 0;
     margin-left: 250px;
-  
-  }
+}
 
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
 
 //   -- main content--
 
-.main_container{
+.main_container {
     padding: 0 !important;
     box-shadow: $box-shadow-sm;
 }
 
-.dashboard_container{
-  padding: 10px;
-  height:  100%;
-  overflow-y: hidden;
-  border-left: 2px solid $light-gray;
-  height: 100vh;
-  overflow: hidden;
-
+.dashboard_container {
+    padding: 12px 12px 12px 12px;
+    height: 100%;
+    overflow-y: hidden;
+    // border-left: 2px solid $light-gray;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $pimary-bg;
 }
 
 // ---Top bar
 
-.top_bar{
-
-  .top_bar_content{
-    padding-top: 6px;
-    padding-bottom: 10px;
-  }
-
-  .greeting_msg{
-    color: $black;
-    font-size: 22px;
-    font-weight: 500;
-  }
-
-  .currentdate{
-    font-size: 16px;
-    font-weight: 400;
-  }
+.topBar_bg {
+    background-color: $secondery-bg;
 }
 
-@media screen and (max-width:991px) {
+.top_bar {
+    background-color: $pimary-bg;
 
-.top_bar_content{
-  padding-left: 10px;
+    hr {
+        margin: 0 0 0 0 !important;
+    }
+
+    .toggleNav {
+        display: flex;
+        align-items: center;
+    }
+
+    .top_bar_content {
+        display: flex;
+        padding: 14px 0;
+        // padding-bottom: 10px;
+    }
+
+    .greeting_msg {
+        color: $black;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .currentdate {
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
-  
+
+@media screen and (max-width: 991px) {
+    .top_bar_content {
+        padding-left: 10px;
+
+        .greeting_msg {
+            padding: 0 10px 0 10px;
+        }
+
+        .currentdate {
+            padding: 0 10px 0 10px;
+        }
+    }
 }

@@ -13,8 +13,10 @@
 
   <div class="sideBar_link">
 
-    <a href="#"> <i class="bi bi-house-fill"></i> Dashboard</a>
+    <a class=""
+    href="#"> <i class="bi bi-house-fill"></i> Dashboard</a>
     <a href="#"> <i class="bi bi-person-fill"></i> Members</a>
+    <a href="#"> <i class="bi bi-people-fill"></i> User</a>
 
   </div>
 

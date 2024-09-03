@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>IIESL</title>
-    <link rel="icon" href="{{ asset('assets/images/logo.png') }}">
+
+    <title>@yield('title', 'Your Default Title')</title>
+
+    <link rel="icon" href="{{ asset('assets/images/logo.svg') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -93,6 +95,34 @@
         @yield('content')
 
     </div>
+
+
+    {{-- toggle menue scrippt --}}
+
+<script>
+    function toggleNav() {
+        const sidebar = document.getElementById("mySidebar");
+        const main = document.getElementById("main");
+        const content = document.getElementById("content");
+
+        // Check if the sidebar is currently open or closed
+        if (sidebar.style.width === "250px" || sidebar.style.width === "") {
+            // If open, close it
+            sidebar.style.width = "0";
+            main.style.marginLeft = "0";
+            content.style.marginLeft = "0";
+
+
+        } else {
+            // If closed, open it
+            sidebar.style.width = "250px";
+            main.style.marginLeft = "250px";
+            content.style.marginLeft = "250px";
+
+        }
+    }
+</script>
+
     
 </body>
 
