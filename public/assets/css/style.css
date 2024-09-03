@@ -39,6 +39,7 @@ p {
 }
 .sidebar .sideBar_link {
   margin: 25px 10px 0 10px;
+  padding-bottom: 10px;
 }
 .sidebar .sideBar_link a {
   display: block;
