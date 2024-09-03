@@ -10,12 +10,6 @@
 
 // --colors
 
-// $pimary-bg: #FFFFFF;
-// $secondery-bg: #edeef3;
-// $black: #000;
-// $secondery-black: #1A1A1A;
-// $gray:#4A4A54;
-// $light-gray: #ddd;
 
 $pimary-bg: #edeef3;
 $secondery-bg: #ffff;
@@ -26,6 +20,8 @@ $light-gray: #ddd;
 $white: #ffff;
 
 $purple: #4b49ac;
+$light-purple:#7978e9;
+$light-blue: #98BDFF;
 
 // --shadow
 
@@ -51,6 +47,12 @@ p {
     transition: 0.5s;
     padding-top: 32px;
 
+    .logo_and_name{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
     .admin_name {
         color: $black;
         font-size: 18px;
@@ -65,6 +67,7 @@ p {
 
     hr {
         margin: 25px 15px 0 15px !important;
+        color: $purple;
     }
 
     .sideBar_link {
@@ -110,11 +113,7 @@ p {
     // padding: 10px 15px;
     border: none;
     margin: 0 0 0 10px;
-    // margin-left: 250px;
 
-    // &:hover {
-    //   background-color: #444;
-    // }
 }
 
 #main {
@@ -171,6 +170,7 @@ p {
 
     hr {
         margin: 0 0 0 0 !important;
+        color: $purple;
     }
 
     .toggleNav {

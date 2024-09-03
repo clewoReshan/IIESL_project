@@ -2,6 +2,14 @@
   {{-- <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a> --}}
 
 
+  <div class="logo_and_name">
+    <div class="logo">
+      <img src="{{asset('assets/images/logo.svg') }}" alt="" width="100px">
+    </div>
+    {{-- <div class="logo_name">IIEESL</div> --}}
+  </div>
+
+
   <div class="admin_name">
     Roshan Sandaruwan 
   </div>

@@ -6,6 +6,8 @@ $secondery-black: #1A1A1A;
 $gray:#4A4A54;
 $light-gray: #ddd;
 $purple : #4B49AC;
+$light-purple:#7978e9;
+$light-blue: #98BDFF;
 
 
 .add_user_btn{
@@ -23,6 +25,18 @@ $purple : #4B49AC;
     justify-content: end;
     background: $purple;
     color: $pimary-bg;
+    font-weight: 500;
+    font-size: 15px;
+
+    &:hover{
+        background-color: $light-purple;
+        transition: 0.5s;
+    }
 }
 
+}
+
+.form-label{
+    margin-top: .5rem !important;
+    margin-bottom: .2rem !important;
 }
