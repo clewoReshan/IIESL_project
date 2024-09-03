@@ -77,6 +77,7 @@ p {
 .sidebar .sideBar_link a {
   display: block;
   padding: 8px 8px 8px 32px;
+  margin: 0 0 4px 0;
   font-size: 18px;
   text-decoration: none;
   color: #4a4a54;
@@ -85,7 +86,7 @@ p {
 .sidebar .sideBar_link a:hover {
   color: white;
   transition: 0.5s;
-  background-color: #4b49ac;
+  background-color: #7978e9;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   border-radius: 5px;
 }
@@ -93,9 +94,9 @@ p {
   padding-right: 10px;
 }
 
-.active-link {
-  color: #000;
-  background-color: #edeef3;
+.active {
+  color: white !important;
+  background-color: #4b49ac;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   border-radius: 5px;
 }

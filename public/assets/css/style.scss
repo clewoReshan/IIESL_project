@@ -78,6 +78,7 @@ p {
         a {
             display: block;
             padding: 8px 8px 8px 32px;
+            margin: 0 0 4px 0;
             font-size: 18px;
             text-decoration: none;
             color: $gray;
@@ -86,7 +87,7 @@ p {
             &:hover {
                 color: $white;
                 transition: 0.5s;
-                background-color: $purple;
+                background-color: $light-purple;
                 box-shadow: $box-shadow-sm;
                 border-radius: 5px;
             }
@@ -98,9 +99,9 @@ p {
     }
 }
 
-.active-link {
-    color: $black;
-    background-color: $pimary-bg;
+.active {
+    color: $white !important;
+    background-color: $purple;
     box-shadow: $box-shadow-sm;
     border-radius: 5px;
 }
