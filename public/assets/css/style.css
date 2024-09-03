@@ -86,7 +86,7 @@ p {
 .sidebar .sideBar_link a:hover {
   color: white;
   transition: 0.5s;
-  background-color: #7978e9;
+  background-color: #4b49ac;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   border-radius: 5px;
 }
@@ -106,8 +106,12 @@ p {
   cursor: pointer;
   background-color: #edeef3;
   color: #1a1a1a;
+  padding: 0 0 0 15px;
   border: none;
   margin: 0 0 0 10px;
+}
+.openbtn:hover {
+  color: #4b49ac;
 }
 
 #main {
@@ -124,7 +128,6 @@ p {
   margin-left: 250px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
@@ -133,20 +136,6 @@ p {
     font-size: 18px;
   }
 }
-.main_container {
-  padding: 0 !important;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-
-.dashboard_container {
-  padding: 12px 12px 12px 12px;
-  height: 100%;
-  overflow-y: hidden;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #edeef3;
-}
-
 .topBar_bg {
   background-color: white;
 }
@@ -186,4 +175,17 @@ p {
   .top_bar_content .currentdate {
     padding: 0 10px 0 10px;
   }
+}
+.main_container {
+  padding: 0 !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.dashboard_container {
+  padding: 12px 12px 12px 12px;
+  height: 100%;
+  overflow-y: hidden;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #edeef3;
 }/*# sourceMappingURL=style.css.map */

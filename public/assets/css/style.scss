@@ -87,7 +87,7 @@ p {
             &:hover {
                 color: $white;
                 transition: 0.5s;
-                background-color: $light-purple;
+                background-color: $purple;
                 box-shadow: $box-shadow-sm;
                 border-radius: 5px;
             }
@@ -111,10 +111,14 @@ p {
     cursor: pointer;
     background-color: $pimary-bg;
     color: $secondery-black;
-    // padding: 10px 15px;
+    padding: 0 0 0 15px;
     border: none;
     margin: 0 0 0 10px;
 
+    &:hover{
+      color: $purple;
+  
+    }
 }
 
 #main {
@@ -122,8 +126,6 @@ p {
     padding: 0;
     margin-left: 250px;
     margin-top: 10px;
-    // border-top: 2px solid $light-gray;
-    // border-left: 2px solid $light-gray;
     border-radius: 15px 0 0 0;
 }
 
@@ -133,7 +135,6 @@ p {
     margin-left: 250px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
@@ -142,6 +143,59 @@ p {
         font-size: 18px;
     }
 }
+
+// ---Top bar
+
+.topBar_bg {
+  background-color: $secondery-bg;
+}
+
+.top_bar {
+  background-color: $pimary-bg;
+
+  hr {
+      margin: 0 0 0 0 !important;
+      color: $purple;
+  }
+
+  .toggleNav {
+      display: flex;
+      align-items: center;
+  }
+
+  .top_bar_content {
+      display: flex;
+      padding: 14px 0;
+      // padding-bottom: 10px;
+  }
+
+  .greeting_msg {
+      color: $black;
+      font-size: 22px;
+      font-weight: 500;
+  }
+
+  .currentdate {
+      font-size: 16px;
+      font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .top_bar_content {
+      padding-left: 10px;
+
+      .greeting_msg {
+          padding: 0 10px 0 10px;
+      }
+
+      .currentdate {
+          padding: 0 10px 0 10px;
+      }
+  }
+}
+
+
 
 //   -- main content--
 
@@ -160,53 +214,3 @@ p {
     background-color: $pimary-bg;
 }
 
-// ---Top bar
-
-.topBar_bg {
-    background-color: $secondery-bg;
-}
-
-.top_bar {
-    background-color: $pimary-bg;
-
-    hr {
-        margin: 0 0 0 0 !important;
-        color: $purple;
-    }
-
-    .toggleNav {
-        display: flex;
-        align-items: center;
-    }
-
-    .top_bar_content {
-        display: flex;
-        padding: 14px 0;
-        // padding-bottom: 10px;
-    }
-
-    .greeting_msg {
-        color: $black;
-        font-size: 22px;
-        font-weight: 500;
-    }
-
-    .currentdate {
-        font-size: 16px;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .top_bar_content {
-        padding-left: 10px;
-
-        .greeting_msg {
-            padding: 0 10px 0 10px;
-        }
-
-        .currentdate {
-            padding: 0 10px 0 10px;
-        }
-    }
-}

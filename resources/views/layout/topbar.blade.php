@@ -4,12 +4,14 @@
 <div id="main" class="top_bar ">
 
 <div class="row top_bar_content shadow-sm ">
+
   <div class="col-lg-1 toggleNav">
-    <button class="openbtn" onclick="toggleNav()">
-    <!-- <i class="bi bi-menu-button-wide" id="menuIcon"></i> -->
+    <button class="openbtn" onclick="toggleNav()" onmouseover="changeIcon()" onmouseout="revertIcon()">
     <i class="bi bi-list" id="menuIcon"></i>
       </button>  
   </div>
+
+
   <div class="col-lg-11 topNav_msg">
     <div class="greeting_msg">Good <span>Morning, </span> <span>Roshan</span> !</div>
 
@@ -48,3 +50,18 @@
 </script>
 
 
+<!-- JavaScript -->
+<script>
+  function changeIcon() {
+    const icon = document.getElementById('menuIcon');
+    icon.className = 'bi bi-arrow-left-circle'; // Change to 'bi bi-x' or another icon
+
+ 
+  }
+  
+  function revertIcon() {
+    const icon = document.getElementById('menuIcon');
+    icon.className = 'bi bi-list'; // Change back to 'bi bi-list'
+  }
+  </script>
+  
