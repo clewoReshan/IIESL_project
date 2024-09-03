@@ -1,11 +1,26 @@
+.add_user_btn {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+.add_user_btn .primary_btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+  background: #4B49AC;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-html {
-  background-color: #F6F7F9;
+body {
+  background-color: white;
 }
 
 p {
@@ -19,10 +34,10 @@ p {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F6F7F9;
+  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 25px;
+  padding-top: 32px;
 }
 .sidebar .admin_name {
   color: #000;
@@ -35,10 +50,11 @@ p {
   padding-left: 32px;
 }
 .sidebar hr {
-  margin: 32px 20px 0 20px;
+  margin: 25px 15px 0 15px !important;
 }
 .sidebar .sideBar_link {
   margin: 25px 10px 0 10px;
+  padding: 0 0 10px 0;
 }
 .sidebar .sideBar_link a {
   display: block;
@@ -49,9 +65,9 @@ p {
   font-weight: 500;
 }
 .sidebar .sideBar_link a:hover {
-  color: #000;
+  color: white;
   transition: 0.5s;
-  background-color: #FFFFFF;
+  background-color: #4B49AC;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   border-radius: 5px;
 }
@@ -59,10 +75,17 @@ p {
   padding-right: 10px;
 }
 
+.active-link {
+  color: #000;
+  background-color: #edeef3;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+}
+
 .openbtn {
   font-size: 30px;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #edeef3;
   color: #1A1A1A;
   border: none;
   margin: 0 0 0 10px;
@@ -72,9 +95,7 @@ p {
   transition: margin-left 0.5s;
   padding: 0;
   margin-left: 250px;
-  margin-top: 12px;
-  border-top: 2px solid #ddd;
-  border-left: 2px solid #ddd;
+  margin-top: 10px;
   border-radius: 15px 0 0 0;
 }
 
@@ -99,17 +120,31 @@ p {
 }
 
 .dashboard_container {
-  padding: 10px;
+  padding: 12px 12px 12px 12px;
   height: 100%;
   overflow-y: hidden;
-  border-left: 2px solid #ddd;
   height: 100vh;
   overflow: hidden;
+  background-color: #edeef3;
 }
 
+.topBar_bg {
+  background-color: white;
+}
+
+.top_bar {
+  background-color: #edeef3;
+}
+.top_bar hr {
+  margin: 0 0 0 0 !important;
+}
+.top_bar .toggleNav {
+  display: flex;
+  align-items: center;
+}
 .top_bar .top_bar_content {
-  padding-top: 6px;
-  padding-bottom: 10px;
+  display: flex;
+  padding: 14px 0;
 }
 .top_bar .greeting_msg {
   color: #000;
@@ -124,5 +159,11 @@ p {
 @media screen and (max-width: 991px) {
   .top_bar_content {
     padding-left: 10px;
+  }
+  .top_bar_content .greeting_msg {
+    padding: 0 10px 0 10px;
+  }
+  .top_bar_content .currentdate {
+    padding: 0 10px 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */

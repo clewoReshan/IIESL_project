@@ -1,0 +1,28 @@
+$pimary-bg: #FFFFFF; 
+// $secondery-bg: #F6F7F9;
+$secondery-bg: #edeef3;
+$black: #000;
+$secondery-black: #1A1A1A;
+$gray:#4A4A54;
+$light-gray: #ddd;
+$purple : #4B49AC;
+
+
+.add_user_btn{
+
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+
+    
+.primary_btn{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+    background: $purple;
+    color: $pimary-bg;
+}
+
+}
