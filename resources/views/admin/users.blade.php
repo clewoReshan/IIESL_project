@@ -483,6 +483,10 @@
                             Next <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -496,6 +500,7 @@
                     >
 
                     <div class="modal-body">
+
                         <form action="" class="row">
                             <div class="col-md-12">
                                 <h6>SECTION 2: DETAILS OF EDUCATION</h6>
@@ -506,13 +511,42 @@
                                     >2.1 General Education</label
                                 >
 
-
                             </div>
 
 
 
 
                         </form>
+
+
+                        <!-- <form id="education-form">
+                            <div id="education-fields">
+                              
+                            </div>
+                            <button type="button" id="add-education">Add Education</button>
+                           
+                        </form> -->
+
+
+
+                
+                            <form id="education-form">
+                                <div id="education-fields">
+                                    <!-- Education fields will be added here -->
+                                </div>
+                                <button type="button" class="btn btn-primary mb-3" id="add-education">Add Education</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                  
+
+
+                        <div class="col-md-12 back_btn">
+                            <button class="BackBtn" onclick="BackModal()">
+                                <i class="bi bi-arrow-left"></i> Back
+                            </button>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -537,6 +571,12 @@
                 openModal("modal2");
             }
 
+            function BackModal(){
+                closeModal("modal2");
+                openModal("modal1")
+
+            }
+
             // Add event listener to the "Add" button to open the first modal
             document
                 .getElementById("addButton")
@@ -544,6 +584,76 @@
                     openModal("modal1");
                 });
         </script>
+
+
+<!-- <script>
+    document.getElementById('add-education').addEventListener('click', function() {
+        // Create a new education field set
+        const container = document.createElement('div');
+        container.classList.add('education-container');
+
+        // Add fields for the education details
+        container.innerHTML = `
+            <label for="institution" class="form-control" >Institution:</label>
+            <input type="text" name="institution[]" required><br>
+            <label for="degree">Degree:</label>
+            <input type="text" name="degree[]" required><br>
+            <label for="year">Year:</label>
+            <input type="text" name="year[]" required><br>
+            <button type="button" class="remove-education">Remove</button>
+            <hr>
+        `;
+
+        // Add the new fields to the container
+        document.getElementById('education-fields').appendChild(container);
+
+        // Add event listener to the remove button
+        container.querySelector('.remove-education').addEventListener('click', function() {
+            container.remove();
+        });
+    });
+</script> -->
+
+
+
+ <!-- Bootstrap JS and Popper.js (required for certain Bootstrap components) -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+ <script>
+     document.getElementById('add-education').addEventListener('click', function() {
+         // Create a new education field set
+         const container = document.createElement('div');
+         container.classList.add('education-container', 'border', 'p-3', 'mb-3', 'rounded');
+
+         // Add fields for the education details using Bootstrap classes
+         container.innerHTML = `
+             <div class="mb-3">
+                 <label for="institution" class="form-label">Institution:</label>
+                 <input type="text" class="form-control" name="institution[]" required>
+             </div>
+             <div class="mb-3">
+                 <label for="degree" class="form-label">Degree:</label>
+                 <input type="text" class="form-control" name="degree[]" required>
+             </div>
+             <div class="mb-3">
+                 <label for="year" class="form-label">Year:</label>
+                 <input type="text" class="form-control" name="year[]" required>
+             </div>
+             <button type="button" class="btn btn-danger remove-education">Remove</button>
+         `;
+
+         // Add the new fields to the container
+         document.getElementById('education-fields').appendChild(container);
+
+         // Add event listener to the remove button
+         container.querySelector('.remove-education').addEventListener('click', function() {
+             container.remove();
+         });
+     });
+ </script>
+
+
     </div>
 </div>
 

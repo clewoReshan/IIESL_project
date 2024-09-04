@@ -41,7 +41,11 @@
   display: flex;
   justify-content: end;
 }
-.modal .NextBtn {
+.modal .back_btn {
+  display: flex;
+  justify-content: start;
+}
+.modal .NextBtn, .modal .BackBtn {
   border: none;
   padding: 8px 30px 8px 30px;
   border-radius: 25px;
@@ -49,7 +53,7 @@
   color: white;
   font-weight: 400;
 }
-.modal .NextBtn:hover {
+.modal .NextBtn:hover, .modal .BackBtn:hover {
   background-color: #7978e9;
   transition: 0.5s;
 }
@@ -148,7 +152,7 @@ p {
 .sidebar .sideBar_link a:hover {
   color: white;
   transition: 0.5s;
-  background-color: #7978e9;
+  background-color: #4b49ac;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   border-radius: 5px;
 }
@@ -167,13 +171,13 @@ p {
   font-size: 30px;
   cursor: pointer;
   background-color: white;
-  color: #1a1a1a;
+  color: #4b49ac;
   padding: 0 0 0 15px;
   border: none;
   margin: 0 0 0 10px;
 }
 .openbtn:hover {
-  color: #1a1a1a;
+  color: #4b49ac;
 }
 
 #main {
@@ -215,6 +219,9 @@ p {
   font-size: 22px;
   font-weight: 500;
 }
+.top_bar .greeting_msg .admin_name {
+  color: #4b49ac;
+}
 .top_bar .currentdate {
   font-size: 16px;
   font-weight: 400;
@@ -244,4 +251,18 @@ p {
   overflow: hidden;
   background-color: #edeef3;
   margin-top: 85px;
+}
+
+@media screen and (max-width: 991px) {
+  .dashboard_container {
+    margin-top: 130px;
+  }
+  .openbtn {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 512px) {
+  .dashboard_container {
+    margin-top: 130px;
+  }
 }/*# sourceMappingURL=style.css.map */

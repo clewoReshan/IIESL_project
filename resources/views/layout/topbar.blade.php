@@ -13,7 +13,7 @@
 
 
   <div class="col-lg-11 topNav_msg">
-    <div class="greeting_msg">Good <span>Morning, </span> <span>Roshan</span> !</div>
+    <div class="greeting_msg"> <span id="greeting"></span> <span class="admin_name">Admin</span></div>
 
     <div id="currentDate" class="currentdate"></div>
   </div>
@@ -64,4 +64,27 @@
     icon.className = 'bi bi-list'; // Change back to 'bi bi-list'
   }
   </script>
+
+  <!-- greeting -->
   
+  <script>
+    function updateGreeting() {
+        const greetingElement = document.getElementById('greeting');
+        const currentHour = new Date().getHours();
+
+        let greeting;
+
+        if (currentHour < 12) {
+            greeting = "Good Morning!";
+        } else if (currentHour < 18) {
+            greeting = "Good Afternoon!";
+        } else {
+            greeting = "Good Evening!";
+        }
+
+        greetingElement.textContent = greeting;
+    }
+
+  
+    updateGreeting();
+</script>

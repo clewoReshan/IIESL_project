@@ -62,11 +62,14 @@ $white: #FFFF;
         justify-content: end;
     }
 
+    .back_btn{
+        display: flex;
+        justify-content: start;
+    }
 
-    .NextBtn{
+
+    .NextBtn, .BackBtn{
         border: none;
-        // padding: 1rem;
-        // width: fit-content;
         padding: 8px 30px 8px 30px;
         border-radius: 25px;
         background-color: $purple;

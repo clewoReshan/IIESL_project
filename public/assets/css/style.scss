@@ -87,7 +87,7 @@ p {
             &:hover {
                 color: $white;
                 transition: 0.5s;
-                background-color: $light-purple;
+                background-color: $purple;
                 box-shadow: $box-shadow-sm;
                 border-radius: 5px;
             }
@@ -110,13 +110,13 @@ p {
     font-size: 30px;
     cursor: pointer;
     background-color: $white;
-    color: $secondery-black;
+    color: $purple;
     padding: 0 0 0 15px;
     border: none;
     margin: 0 0 0 10px;
 
     &:hover{
-      color: $secondery-black;
+      color: $purple;
   
     }
 }
@@ -168,6 +168,10 @@ p {
       color: $black;
       font-size: 22px;
       font-weight: 500;
+
+      .admin_name{
+        color: $purple;
+      }
   }
 
   .currentdate {
@@ -209,4 +213,26 @@ p {
     background-color: $pimary-bg;
     margin-top: 85px;
 }
+
+@media screen and (max-width:991px) {
+
+    .dashboard_container{
+        margin-top: 130px;
+    }
+
+    .openbtn{
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width:512px) {
+
+    .dashboard_container{
+        margin-top: 130px;
+    }
+    
+}
+
+
 

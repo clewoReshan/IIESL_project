@@ -20,8 +20,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('admin/user', function () {
-    return view('admin/user');
+Route::get('admin/users', function () {
+    return view('admin/users');
 });
 
 Route::controller(AuthController::class)->group(function () {
