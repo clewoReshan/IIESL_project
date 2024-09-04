@@ -1,9 +1,9 @@
 <div class = "topBar_bg">
 
 
-<div id="main" class="top_bar ">
+<div id="main" class="top_bar shadow-sm">
 
-<div class="row top_bar_content shadow-sm ">
+<div class="row top_bar_content ">
 
   <div class="col-lg-1 toggleNav">
     <button class="openbtn" onclick="toggleNav()" onmouseover="changeIcon()" onmouseout="revertIcon()">
@@ -19,7 +19,7 @@
   </div>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 </div>
 

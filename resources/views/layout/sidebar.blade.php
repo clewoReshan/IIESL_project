@@ -1,4 +1,4 @@
-<div id="mySidebar" class="sidebar ">
+<div id="mySidebar" class="sidebar shadow-sm ">
   {{-- <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a> --}}
 
 

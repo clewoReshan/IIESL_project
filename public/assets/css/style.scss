@@ -87,7 +87,7 @@ p {
             &:hover {
                 color: $white;
                 transition: 0.5s;
-                background-color: $purple;
+                background-color: $light-purple;
                 box-shadow: $box-shadow-sm;
                 border-radius: 5px;
             }
@@ -109,14 +109,14 @@ p {
 .openbtn {
     font-size: 30px;
     cursor: pointer;
-    background-color: $pimary-bg;
+    background-color: $white;
     color: $secondery-black;
     padding: 0 0 0 15px;
     border: none;
     margin: 0 0 0 10px;
 
     &:hover{
-      color: $purple;
+      color: $secondery-black;
   
     }
 }
@@ -125,8 +125,11 @@ p {
     transition: margin-left 0.5s;
     padding: 0;
     margin-left: 250px;
-    margin-top: 10px;
-    border-radius: 15px 0 0 0;
+    // margin-top: 10px;
+    // border-radius: 15px 0 0 0;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 #content {
@@ -146,17 +149,9 @@ p {
 
 // ---Top bar
 
-.topBar_bg {
-  background-color: $secondery-bg;
-}
 
 .top_bar {
-  background-color: $pimary-bg;
-
-  hr {
-      margin: 0 0 0 0 !important;
-      color: $purple;
-  }
+  background-color: $white;
 
   .toggleNav {
       display: flex;
@@ -205,12 +200,13 @@ p {
 }
 
 .dashboard_container {
-    padding: 12px 12px 12px 12px;
+    padding: 0 12px 12px 12px;
     height: 100%;
     overflow-y: hidden;
     // border-left: 2px solid $light-gray;
     height: 100vh;
     overflow: hidden;
     background-color: $pimary-bg;
+    margin-top: 85px;
 }
 
