@@ -24,6 +24,11 @@ Route::get('admin/users', function () {
     return view('admin/users');
 });
 
+Route::get('admin/form', function () {
+    return view('admin/form');
+});
+
+
 Route::controller(AuthController::class)->group(function () {
     Route::get('/admin/log', 'admin_log_index')->name('admin_log_index');
     Route::post('/admin/log', 'admin_log')->name('admin_log');
